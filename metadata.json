@@ -1,0 +1,7 @@
+{
+  "name": "MiloAI",
+  "description": "Um assistente financeiro pessoal conversacional inteligente. Controle gastos, receitas e metas através de linguagem natural.",
+  "requestFramePermissions": [
+    "microphone"
+  ]
+}
