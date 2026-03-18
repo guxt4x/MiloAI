@@ -14,11 +14,16 @@ A arquitetura do projeto é baseada em componentes e dividida nos seguintes serv
 2. **Inteligência Artificial (`Google Gemini`)**: O "cérebro" do chatbot. O serviço `gemini.service.ts` é responsável por capturar a mensagem do usuário no componente de chat (`chat.component.ts`), enviá-la para a API da inteligência artificial e devolver a resposta formatada para a tela. *É aqui que a ausência da chave da API impede a comunicação atual.*
 3. **Interface de Usuário (`Componentes`)**: O front-end consome os serviços acima para exibir o Dashboard e a interface de Chat de forma reativa, gerenciando o estado da aplicação.
 
-## 🚀 Funcionalidades (Atuais e Planejadas)
+## 🚀 Funcionalidades
 
-- **Autenticação Segura**: Login e registro de usuários conectados ao Supabase.
-- **Dashboard e Finanças**: Interface para controle e visualização de métricas/finanças.
-- **Chatbot Integrado**: Interface de chat preparada para comunicação com IA generativa (aguardando inserção da chave API).
+A aplicação permite ao utilizador gerir as suas finanças e interagir com a IA num ambiente unificado. As principais funcionalidades incluem:
+
+- **Autenticação Segura:** Registo e login de utilizadores com proteção de rotas (via Supabase).
+- **Gestão Financeira:** Inserção e controlo de receitas e despesas.
+- **Definição de Metas:** Adicionar metas financeiras e acompanhar o progresso até as alcançar.
+- **Dashboard Interativo:** Visualização de dados e métricas financeiras através de gráficos dinâmicos.
+- **Assistente Virtual Integrado:** Chatbot nativo desenhado para responder a dúvidas e oferecer conselhos (funcionalidade dependente da inserção da chave API do Gemini).
+- **Sincronização em Tempo Real:** Os dados financeiros guardados no banco de dados refletem-se automaticamente no painel de controlo.
 
 ## 🛠️ Tecnologias Utilizadas
 
